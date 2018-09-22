@@ -9,9 +9,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Test.recorsive(new File("C:\\dmitry")); //Написать рекурсивный обход всех файлов и
+        Test.recorsive("",new File("C:\\dmitry")); //Написать рекурсивный обход всех файлов и
                                                          // подкаталогов внутри заданного каталога
-        System.out.println();
+        /*System.out.println();
         System.out.println("Введите имя файла, который хотите создать: "); //Написать программу, которая будет создавать,
                                                                            // переименовывать, копировать и удалять файл
         Scanner sc = new Scanner(System.in);
@@ -46,9 +46,8 @@ public class Main {
                 break;
                 default:
                     System.out.println("нет такой команды");
-                    break;
+                    break;*/
             }
     }
 
-    }
 

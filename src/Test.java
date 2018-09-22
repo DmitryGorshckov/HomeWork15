@@ -7,16 +7,17 @@ import java.nio.file.Paths;
 public class Test {
 
     private static File file;
+    private static String st;
 
-    public static void recorsive(File file) throws IOException {
+    public static  void recorsive( String st, File file) throws IOException {
             File[] files = file.listFiles();
                 for (File file1 : files) {
                     if(file1.isDirectory()){
-                        System.out.println(file1.getName());
-                        recorsive(file1);
+                        System.out.println(st+file1.getName());
+                        recorsive(st+=st+" ",file1);
                     }
                        else if (file1.isFile()){
-                        System.out.println(file1.getName());
+                        System.out.println(st+file1.getName());
                     }
             }
         }
